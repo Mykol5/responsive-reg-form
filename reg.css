@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: url("bg-intro-mobile.png"), hsl(0, 100%, 74%);
+  background: url("bg-intro-desktop.png"), hsl(0, 100%, 74%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+main {
+  display: flex;
+  gap: 40px;
+  place-content: center center;
+  margin: 40px 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  width: 420px;
+  height: 350px;
+}
+/*form .p .form-foot {
+  font-size: 50px;
+}*/
+input {
+  height: 40px;
+  padding: 7px 20px;
+  background-color: transparent;
+}
+#for-submit {
+  background: hsl(154, 59%, 51%);
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins";
+}
+#firstname {
+  font-family: "Poppins";
+}
+#lastname {
+  font-family: "Poppins";
+}
+#email {
+  font-family: "Poppins";
+}
+#password {
+  font-family: "Poppins";
+}
+.form-intro {
+  text-align: center;
+  background: hsl(248, 32%, 49%);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form-foot {
+  color: lightgray;
+  font-size: 60%;
+  text-align: center;
+}
+span {
+  color: red;
+  cursor: pointer;
+}
+.first-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+}
+.first-section p {
+  font-size: 14px;
+}
+.first-section,
+.form-intro,
+#for-submit {
+  color: white;
+}
+@media all and (max-width: 900px) {
+  main {
+    display: flex;
+    gap: 40px;
+    place-content: center center;
+    flex-direction: column;
+  }
+}
